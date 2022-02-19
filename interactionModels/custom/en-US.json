@@ -1,0 +1,661 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "zomo finder",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "CaptureCategoryIntent",
+          "slots": [
+            {
+              "name": "category",
+              "type": "categoryType",
+              "samples": [
+                "i want to find my {category}",
+                "could you tell me my {category}",
+                "i would like to know my {category}",
+                "could you please tell me my {category}",
+                "know my {category}",
+                "its {category}",
+                "looking for {category}"
+              ]
+            }
+          ],
+          "samples": [
+            "i want to watch action {category} could you suggest me ",
+            "i want to watch good {category}",
+            "suggest me a {category} now",
+            "now suggest me some good {category}",
+            "suggest me some {category}",
+            "could you please suggest good {category}",
+            "could you please suggest {category}",
+            "my {category}",
+            "suggest {category}",
+            "suggest awesome {category}",
+            "suggest me some good {category}",
+            "could you tell {category} suggestion",
+            "i would like suggestion for {category}",
+            "i would like {category} suggestion ",
+            "could you please tell me {category} suggestion ",
+            "know {category} suggestion ",
+            "know suggestion for {category}",
+            "its {category} suggestion",
+            "looking for {category} suggestion",
+            "whats the {category} sign",
+            "could you please tell me what my {category} sign is",
+            "please tell me what my {category} sign is based on my birthday",
+            "let me know my {category} sign",
+            "tell me my {category} sign for my birthday",
+            "tell me my birthday {category} sign",
+            "for my birthday please tell me my {category} sign",
+            "tell {category} sign for my birthday",
+            "please state my {category} sign once more",
+            "please repeat my {category} sign",
+            "tell my {category} sign once more",
+            "say my {category} sign",
+            "what is your take on my {category} sign",
+            "can you tell me what my {category} sign is",
+            "what about my {category} sign",
+            "can you tell my {category} sign",
+            "can you give my {category} sign",
+            "what is my {category} sign",
+            "want to know my {category} sign",
+            "{category} sign",
+            "do you know what my {category} sign is",
+            "find out what my {category} sign is",
+            "get my {category} sign",
+            "open my {category} sign",
+            "looking for {category}",
+            "its {category}",
+            "know my {category}",
+            "could you please tell me my {category}",
+            "i would like to know my {category}",
+            "could you tell me my {category}",
+            "i want to find my {category}",
+            "i am here for {category}",
+            "could you tell my {category}",
+            "whats my {category}",
+            "looking for my {category}",
+            "{category} please",
+            "{category}",
+            "{category} suggestions"
+          ]
+        },
+        {
+          "name": "CaptureNameIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "nameType",
+              "samples": [
+                "its {name}",
+                "{name} is my name",
+                "name {name}",
+                "hi this side {name}",
+                "i am {name}",
+                "{name} this side",
+                "{name}",
+                "my name is {name}"
+              ]
+            }
+          ],
+          "samples": [
+            "my name is {name}",
+            "{name}",
+            "{name} this side",
+            "i am {name}",
+            "hi this side {name}",
+            "name {name}",
+            "{name} is my name",
+            "Its {name}"
+          ]
+        },
+        {
+          "name": "CaptureZodiacIntent",
+          "slots": [
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal",
+              "samples": [
+                "{day} {month} {year} is my birthday",
+                "its on {day} {month} {year}",
+                "was born on {day} {month}",
+                "was born on {day} {month} {year}",
+                "my birthday occurs on {day} {month} {year}",
+                "{day} of {month} in {year} ",
+                "it is on {day} {month} ",
+                "it is on {day} {month} {year}",
+                "its {year} {month} {day}",
+                " its {day} {month} {year}",
+                "{year} {month} {day}",
+                "{month} {day}",
+                "{day}  {month}",
+                "my birthday is {month} {day} {year}",
+                "my birthday is on {day} {month} {year}",
+                "my birth day is on {day} {month} {year}",
+                "i was born on {year} {day}",
+                "i was born on {month} {day}",
+                "i was born on {day} {year}",
+                "i was born on {day} {month}",
+                "i was born on {month} {year} {day}",
+                "i was born on {month} {day} {year}",
+                "i was born on {year} {day} {month}",
+                "i was born on {year} {month} {day}",
+                "i was born on {day} {year} {month} ",
+                "i was born on {day} {month} {year}",
+                "i was born on {day}",
+                "its {day}",
+                "{day} {month} {year}",
+                "{day}"
+              ]
+            },
+            {
+              "name": "month",
+              "type": "AMAZON.Month",
+              "samples": [
+                "{month} {year}",
+                "{month} {day}",
+                "i was born in {month}",
+                "its {month}",
+                "{month}"
+              ]
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "i was born on {day} {month} {year} what is my zodiac sign",
+            "i was born on {day} {month} {year}",
+            "i was born on {day} {year} {month} ",
+            "i was born on {year} {month} {day}",
+            "i was born on {year} {day} {month}",
+            "i was born on {month} {day} {year}",
+            "i was born on {month} {year} {day}",
+            "i was born on {day} {month}",
+            "i was born on {day} {year}",
+            "i was born on {month} {day}",
+            "i was born on {month} {year}",
+            "i was born on {year} {month}",
+            "i was born on {year} {day}",
+            "i was born in {month}",
+            "i was born on {year}",
+            "i was born on {day}",
+            "my birth day is on {day} {month} {year}",
+            "my birthday is on {day} {month} {year}",
+            "my birthday is {month} {day} {year}",
+            "{month}",
+            "{day}",
+            "{year}",
+            "{day} {month}",
+            "{month} {day}",
+            "{month} {year}",
+            "{year} {month}",
+            "{year} {month} {day}",
+            "{day} {month} {year}",
+            "its {day} {month} {year}",
+            "its {year} {month} {day}",
+            "it is on {day} {month} {year}",
+            "it is on {day} {month} ",
+            "it is on {month} {year}",
+            "my birthday occurs on {day} {month} {year}",
+            "my birthday occurs on {day} {month}",
+            "my birthday occurs on {month} {year}",
+            "was born on {day} {month} {year}",
+            "was born on {day} {month}",
+            "was born on {month} {year}",
+            "was born in {month}",
+            "was born in {year}",
+            "its in {month}",
+            "its in {year}",
+            "its on {day} {month} {year}",
+            "its on {day} {month}",
+            "its on {month} {year}",
+            "{day} {month} {year} is my birthday",
+            "{month} {year} is my birthday",
+            "{month} is my birth month",
+            "{day} day of {month} in {year}",
+            "{day} day of {month}",
+            "in {year}",
+            "{day} of {month} in {year}"
+          ]
+        },
+        {
+          "name": "CaptureMovieIntent",
+          "slots": [
+            {
+              "name": "language",
+              "type": "AMAZON.Language",
+              "samples": [
+                "surprise me with {language} movie",
+                "suggest me some {language} movie",
+                "{language} please",
+                "{language} movie please",
+                "{language} movie",
+                "{language}",
+                "I would like to watch {language} movie"
+              ]
+            },
+            {
+              "name": "actor",
+              "type": "AMAZON.Actor"
+            },
+            {
+              "name": "genre",
+              "type": "AMAZON.Genre"
+            }
+          ],
+          "samples": [
+            "suggest {language} movie",
+            "suggest {language} {genre} movie",
+            "suggest {language} {genre} movie of {actor} ",
+            "suggest {language} movie of {actor}",
+            "suggest {actor} movie",
+            "suggest {actor} {language} movie",
+            "suggest {actor} {genre} movie",
+            "suggest {actor} {genre} movie in {language}",
+            "suggest {actor} movie in {language}",
+            "suggest {genre} movie",
+            "suggest {genre} movie of {actor}",
+            "suggest {genre} movie in {language}",
+            "suggest {genre} movie of {actor} in {language}",
+            "suggest {genre} movie in {language} of {actor}",
+            "suggest me a {language} movie",
+            "suggest me a {language} {genre} movie",
+            "suggest me a {language} {genre} movie of {actor} ",
+            "suggest me a {language} movie of {actor}",
+            "suggest me a {actor} movie",
+            "suggest me a {actor} {language} movie",
+            "suggest me a {actor} {genre} movie",
+            "suggest me a {actor} {genre} movie in {language}",
+            "suggest me a {actor} movie in {language}",
+            "suggest me a {genre} movie",
+            "suggest me a {genre} movie of {actor}",
+            "suggest me a {genre} movie in {language}",
+            "suggest me a {genre} movie of {actor} in {language}",
+            "suggest me a {genre} movie in {language} of {actor}",
+            "please suggest {language} movie",
+            "please suggest {language} {genre} movie",
+            "please suggest {language} {genre} movie of {actor} ",
+            "please suggest {language} movie of {actor}",
+            "please suggest {actor} movie",
+            "please suggest {actor} {language} movie",
+            "please suggest {actor} {genre} movie",
+            "please suggest {actor} {genre} movie in {language}",
+            "please suggest {actor} movie in {language}",
+            "please suggest {genre} movie",
+            "please suggest {genre} movie of {actor}",
+            "please suggest {genre} movie in {language}",
+            "please suggest {genre} movie of {actor} in {language}",
+            "please suggest {genre} movie in {language} of {actor}",
+            "could you please suggest me {language} movie",
+            "could you please suggest me {language} {genre} movie",
+            "could you please suggest me {language} {genre} movie of {actor} ",
+            "could you please suggest me {language} movie of {actor}",
+            "could you please suggest me {actor} movie",
+            "could you please suggest me {actor} {language} movie",
+            "could you please suggest me {actor} {genre} movie",
+            "could you please suggest me {actor} {genre} movie in {language}",
+            "could you please suggest me {actor} movie in {language}",
+            "could you please suggest me {genre} movie",
+            "could you please suggest me {genre} movie of {actor}",
+            "could you please suggest me {genre} movie in {language}",
+            "could you please suggest me {genre} movie of {actor} in {language}",
+            "could you please suggest me {genre} movie in {language} of {actor}",
+            "I would like you to suggest me  {language} movie",
+            "I would like you to suggest me  {language} {genre} movie",
+            "I would like you to suggest me  {language} {genre} movie of {actor} ",
+            "I would like you to suggest me  {language} movie of {actor}",
+            "I would like you to suggest me  {actor} movie",
+            "I would like you to suggest me  {actor} {language} movie",
+            "I would like you to suggest me  {actor} {genre} movie",
+            "I would like you to suggest me  {actor} {genre} movie in {language}",
+            "I would like you to suggest me  {actor} movie in {language}",
+            "I would like you to suggest me  {genre} movie",
+            "I would like you to suggest me  {genre} movie of {actor}",
+            "I would like you to suggest me  {genre} movie in {language}",
+            "I would like you to suggest me  {genre} movie of {actor} in {language}",
+            "I would like you to suggest me  {genre} movie in {language} of {actor}",
+            "I would like to watch {language} movie",
+            "I would like to watch {language} {genre} movie",
+            "I would like to watch {language} {genre} movie of {actor} ",
+            "I would like to watch {language} movie of {actor}",
+            "I would like to watch {actor} movie",
+            "I would like to watch {actor} {language} movie",
+            "I would like to watch {actor} {genre} movie",
+            "I would like to watch {actor} {genre} movie in {language}",
+            "I would like to watch {actor} movie in {language}",
+            "I would like to watch {genre} movie",
+            "I would like to watch {genre} movie of {actor}",
+            "I would like to watch {genre} movie in {language}",
+            "I would like to watch {genre} movie of {actor} in {language}",
+            "I would like to watch {genre} movie in {language} of {actor}",
+            "surprise me with  {language} movie",
+            "surprise me with  {language} {genre} movie",
+            "surprise me with  {language} {genre} movie of {actor} ",
+            "surprise me with  {language} movie of {actor}",
+            "surprise me with  {actor} movie",
+            "surprise me with  {actor} {language} movie",
+            "surprise me with  {actor} {genre} movie",
+            "surprise me with  {actor} {genre} movie in {language}",
+            "surprise me with  {actor} movie in {language}",
+            "surprise me with  {genre} movie",
+            "surprise me with  {genre} movie of {actor}",
+            "surprise me with  {genre} movie in {language}",
+            "surprise me with  {genre} movie of {actor} in {language}",
+            "surprise me with  {genre} movie in {language} of {actor}",
+            "a good  {language} movie",
+            "a good  {language} {genre} movie",
+            "a good  {language} {genre} movie of {actor} ",
+            "a good  {language} movie of {actor}",
+            "a good  {actor} movie",
+            "a good  {actor} {language} movie",
+            "a good  {actor} {genre} movie",
+            "a good  {actor} {genre} movie in {language}",
+            "a good  {actor} movie in {language}",
+            "a good  {genre} movie",
+            "a good  {genre} movie of {actor}",
+            "a good  {genre} movie in {language}",
+            "a good  {genre} movie of {actor} in {language}",
+            "a good  {genre} movie in {language} of {actor}",
+            "best {language} movie",
+            "best {language} {genre} movie",
+            "best {language} {genre} movie of {actor} ",
+            "best {language} movie of {actor}",
+            "best {actor} movie",
+            "best {actor} {language} movie",
+            "best {actor} {genre} movie",
+            "best {actor} {genre} movie in {language}",
+            "best {actor} movie in {language}",
+            "best {genre} movie",
+            "best {genre} movie of {actor}",
+            "best {genre} movie in {language}",
+            "best {genre} movie of {actor} in {language}",
+            "best {genre} movie in {language} of {actor}",
+            "I prefer {language} movie",
+            "I prefer {language} {genre} movie",
+            "I prefer {language} {genre} movie of {actor} ",
+            "I prefer {language} movie of {actor}",
+            "I prefer {actor} movie",
+            "I prefer {actor} {language} movie",
+            "I prefer {actor} {genre} movie",
+            "I prefer {actor} {genre} movie in {language}",
+            "I prefer {actor} movie in {language}",
+            "I prefer {genre} movie",
+            "I prefer {genre} movie of {actor}",
+            "I prefer {genre} movie in {language}",
+            "I prefer {genre} movie of {actor} in {language}",
+            "I prefer {genre} movie in {language} of {actor}",
+            "I feel like watching  {language} movie",
+            "I feel like watching  {language} {genre} movie",
+            "I feel like watching  {language} {genre} movie of {actor} ",
+            "I feel like watching  {language} movie of {actor}",
+            "I feel like watching  {actor} movie",
+            "I feel like watching  {actor} {language} movie",
+            "I feel like watching  {actor} {genre} movie",
+            "I feel like watching  {actor} {genre} movie in {language}",
+            "I feel like watching  {actor} movie in {language}",
+            "I feel like watching  {genre} movie",
+            "I feel like watching  {genre} movie of {actor}",
+            "I feel like watching  {genre} movie in {language}",
+            "I feel like watching  {genre} movie of {actor} in {language}",
+            "I feel like watching  {genre} movie in {language} of {actor}",
+            "{language} movie",
+            "{language} {genre} movie",
+            "{language} {genre} movie of {actor} ",
+            "{language} movie of {actor}",
+            "{actor} movie",
+            "{actor} {language} movie",
+            "{actor} {genre} movie",
+            "{actor} {genre} movie in {language}",
+            "{actor} movie in {language}",
+            "{genre} movie",
+            "{genre} movie of {actor}",
+            "{genre} movie in {language}",
+            "{genre} movie of {actor} in {language}",
+            "{genre} movie in {language} of {actor}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "deepak"
+              }
+            },
+            {
+              "name": {
+                "value": "kumar"
+              }
+            },
+            {
+              "name": {
+                "value": "rahul"
+              }
+            },
+            {
+              "name": {
+                "value": "sanjay"
+              }
+            },
+            {
+              "name": {
+                "value": "vishal"
+              }
+            },
+            {
+              "name": {
+                "value": "siddharth"
+              }
+            },
+            {
+              "name": {
+                "value": "arjun"
+              }
+            },
+            {
+              "name": {
+                "value": "Aditya"
+              }
+            }
+          ],
+          "name": "nameType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "zodiac",
+                "synonyms": [
+                  "Astrological",
+                  "horoscope",
+                  "zod",
+                  "zodiac sign"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "movie",
+                "synonyms": [
+                  "movies",
+                  "film"
+                ]
+              }
+            }
+          ],
+          "name": "categoryType"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CaptureCategoryIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "category",
+              "type": "categoryType",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1583524516812.1377709041855"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CaptureNameIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "name",
+              "type": "nameType",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.945979388044.240993442012"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CaptureZodiacIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1070907504112.878685779229"
+              }
+            },
+            {
+              "name": "month",
+              "type": "AMAZON.Month",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1070907504112.1226768556865"
+              }
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "CaptureMovieIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "language",
+              "type": "AMAZON.Language",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.510896618742.972110855635"
+              }
+            },
+            {
+              "name": "actor",
+              "type": "AMAZON.Actor",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "genre",
+              "type": "AMAZON.Genre",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.945979388044.240993442012",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "My name is Zomo, what\u0027s yours?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1583524516812.1377709041855",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What you wanna search for, new movie suggestion or zodiac?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1070907504112.878685779229",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What day were you born?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1070907504112.1226768556865",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What month were you born?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.510896618742.972110855635",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which language movie do you wanna watch?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "8"
+}
